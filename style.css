@@ -59,7 +59,7 @@ p{
 .image:nth-child(6n+7){
     grid-row-start: span 1;
 }
-}
+
 .image:nth-child(8n+9){
     grid-row-start: span 1;
     grid-column-start: span 1;
