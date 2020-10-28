@@ -20,7 +20,7 @@ h3{
     font-family: 'Poppins', sans-serif;
     font-size: 1.0rem;
 }
-p{
+.footer{
     position: fixed;
     color: white;
     bottom: 5px;
