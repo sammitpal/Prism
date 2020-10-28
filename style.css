@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2d2d2d;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    font-size: 3.0rem;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+h3{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.0rem;
+}
+p{
+    position: fixed;
+    color: white;
+    bottom: 5px;
+    right: 10px;
+    z-index: 1;
+    font-size: 0.8rem;
+}
+#main{
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+}
+.image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.image:first-child{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.image:nth-child(2n+3){
+    grid-row-start: span 2;
+}
+.image:nth-child(4n+5){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+.image:nth-child(6n+7){
+    grid-row-start: span 1;
+}
+}
+.image:nth-child(8n+9){
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+}
+.image img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    filter: brightness(0.7) grayscale(100%);
+}
+.image img:hover{
+    filter: brightness(1) grayscale(0);
+}
+.image p{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+    color: #eee;
+    display: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+.image:hover p{
+    display: block;
+    font-weight: bold;
+}
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #2d2d2d;
+}
+#form input{
+    padding: 1.2rem 1.0rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+#form input[type=text]{
+    width: 70%;
+}
+#form input[type=text]:focus{
+    outline: none;
+    border: 2px solid yellow;
+}
+#form input[type="submit"]:focus{
+    outline: none;
+}
+#form input[type="submit"]:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#loadmore{
+    padding: 0.5rem 1rem;
+    margin: auto;
+    cursor: pointer;
+    background-color: #000;
+    color: #eee;
+    border: none;
+}
+#loadmore:active{
+    transform:  scale(0.9);
+}
+#loadmore:focus{
+    outline: none;
+}

@@ -1,0 +1,9 @@
+#main{
+    display: block;
+}
+.image{
+    margin-top: 20px;
+}
+.image img{
+    filter: brightness(1) grayscale(0);
+}
