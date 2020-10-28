@@ -7,3 +7,13 @@
 .image img{
     filter: brightness(1) grayscale(0);
 }
+p{
+    position: fixed;
+    color: white;
+    bottom: 5px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
